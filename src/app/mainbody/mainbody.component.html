@@ -1,0 +1,42 @@
+
+
+
+<input type="number"/>
+<button type="button" class="btn btn-primary" onclick="onClick($event)">
+Submit
+</button>
+
+
+
+
+{{outputDetail.Message}}
+<table>
+<thead class="table-bordered">
+  <td>Name</td>                         
+  <td>Description</td>
+  <td>BranchType</td>
+  <td>Taluk</td>
+  <td>Circle</td>
+  <td>District</td>
+  <td>Division</td>
+  <td>Region</td>
+  <td>State</td>
+  <td>Country</td>
+</thead>
+
+<tr *ngFor="let d of outputDetail.PostOffice">
+  <td>{{d.Name}}</td>
+  <td>{{d.Description}}</td>
+  <td>{{d.BranchType}}</td>
+  <td>{{d.Taluk}}</td>
+  <td>{{d.Circle}}</td>
+  <td>{{d.District}}</td>
+  <td>{{d.Division}}</td>
+  <td>{{d.Region}}</td>
+  <td>{{d.State}}</td>
+  <td>{{d.Country}}</td>
+</tr>
+
+
+</table>
+
